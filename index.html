@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="js/jquery-3.1.0.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Tangerine/Alata" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
+    <meta charset="utf-8">
+    <title>Dice Game</title>
+  </head>
+  <body>
+    <div class="container">
+      <img class="img-responsive" src="img/img17compressed.jpeg" id="grass">
+      <div id="startScreen" class="row">
+       <h1><img src="img/dice.gif" alt="Website Logo">Dice Game</h1>
+
+        <form>
+          <div class="col-xs-6">
+            <label for="name0">Player 1:</label>
+            <input type="text" name="name0" placeholder="Enter your name" id="name0">
+          </div>
+          <div class="col-xs-6">
+            <label for="name1">Player 2:</label>
+            <input type="text" name="name1" placeholder="Enter your name" id="name1">
+          </div>
+          <button id="startButton" type="submit" name="button" class="btn btn-default">Start Game!</button>
+        </form>
+        <div class="rules">
+          <h4>Rules:</h4>
+          <ul>
+            <li>Each turn, a player repeatedly rolls a die until either a 1 is rolled or the player decides to "hold"</li>
+            <li>If player gets a 1, they receive no points and the next player will go</li>
+            <li>If player receives any number other than 1, it is added to their turn total and the player continues to roll</li>
+            <li>If a player chooses to "hold", their turn total is added to their total score and the next player will go.</li>
+            <li>The first player to hit 100 wins</li>
+          </ul>
+        </div>
+      </div>
+      </div>
+      <div id="gameScreen">
+        <div class="row">
+          <div class="player0 col-xs-5">
+            <h2 class="player0Name"></h2>
+            <img class="img-responsive" src="img/pig1.jpg">
+          </div>
+          <div class="col-xs-2">
+            <br><br>
+            <h1>VS</h1>
+            <button id="rollButton" type="button" name="button" class="btn btn-default">Roll</button>
+            <p class="dieValue"></p>
+            <button id="holdButton" type="button" name="button" class="btn btn-default">Hold</button>
+          </div>
+          <div class="player1 col-xs-5">
+            <h2 class="player1Name"></h2>
+            <img class="img-responsive" src="img/pig1reverse.jfif">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-5">
+            <p id="player0Turn"></p>
+            <h3>Current: <span id="player0Currently"></span></h3>
+            <h3>Total: <span id="player0Total"></span></h3>
+          </div>
+          <div class="col-xs-2">
+          </div>
+          <div class="col-xs-5">
+            <p id="player1Turn"></p>
+            <h3>Current: <span id="player1Currently"></span></h3>
+            <h3>Total: <span id="player1Total"></span></h3>
+          </div>
+        </div>
+      </div>
+      <div id="player0Win">
+        <h2>Congrats!!!<br><span class="player0Name"></span>.....you are the winner!</h2>
+        <div class="row">
+          <div class="col-xs-6">
+            <img src="img/pig1.jpg" class="img-responsive">
+          </div>
+          <div class="col-xs-6">
+            <img src="img/pig1reverse.jfif" class="animated bounceOutUp img-responsive">
+          </div>
+        </div>
+        <p>Well played !!! Try your LUCK again!......</p>
+        <h3 class="playAgain">Play Again?</h3>
+      </div>
+      <div id="player1Win">
+        <h2>Congrats!!!<br><span class="player1Name"></span>.....you are the winner!</h2>
+        <div class="row">
+          <div class="col-xs-6">
+            <img src="img/pig1.jpg" class="animated bounceOutUp img-responsive">
+          </div>
+          <div class="col-xs-6">
+            <img src="img/pig1reverse.jfif" class="img-responsive">
+          </div>
+        </div>
+        <p>Well played !!! Try your LUCK again!......</p>
+        <h3 class="playAgain">Play Again?</h3>
+      </div>
+    </div>
+  </body>
+</html>

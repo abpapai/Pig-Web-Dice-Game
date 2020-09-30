@@ -1,0 +1,208 @@
+body{
+  font-family: 'Dosis', sans-serif;
+  background-color: grey;
+  
+}
+
+.container #grass{
+    margin-top: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0px;
+    background-image: url(..img/img17compressed.jpeg);
+    background-size: relative;
+    
+}
+
+h1{
+  font-family: 'Alata', cursive;
+  font-size: 30%;
+}
+.col-xs-2 h1{
+  font-size: 5em;
+}
+.playAgain{
+  font-family: 'Alata', cursive;
+  font-size: 2em;
+}
+.desaturate{
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+h2.player0Name, h2.player1Name{
+  font-size: 3em;
+  font-weight: bolder;
+}
+#player0Win {
+  display: none;
+}
+#player1Win {
+  display: none;
+}
+#gameScreen {
+  display: none;
+}
+#player0Turn,#player1Turn{
+  font-size: 80px;
+}
+#rules{
+  font-size: 20px;
+}
+#startScreen {
+  background-color: rgba(255, 255, 255,0);
+    font-size: 14px;
+    padding: 10px;
+    margin: 0px;
+    width: 100%;
+    text-align: center;
+    border-radius: 0px 0px 20px 20px;
+    border-bottom: 1px solid #001f75;
+    
+}
+#startScreen img {
+    width: 20%;
+    height: 5%;
+    padding-right: 30px;
+}
+#startScreen h1 {
+    font-size: 50%;
+    color: #001f75;
+    font-weight: bolder;
+}
+#startButton{
+  border: 5px solid black;
+  font-weight: 5px;
+  color: black;
+  margin-top: 5px;
+}
+#startButton:hover{
+background: rgba(255, 255, 0, 0.3);
+}
+#rollButton, #holdButton{
+  border: 3px solid black;
+  color: black;
+}
+#rollButton:hover, #holdButton:hover{
+opacity: 0.7;
+}
+label{
+  color: white;
+}
+input{
+  border-radius: 3px;
+}
+img#grass{
+  position: relative;
+  margin-top: 10%;
+}
+#startScreen{
+  position: absolute;
+  top: 150px;
+  left: 10%;
+  right: 10%;
+  max-width: 1000px;
+}
+#startScreen {
+  margin: 0 auto;
+  text-align: center;
+}
+#startScreen h1{
+  text-align: center;
+  font-size: 5em;
+  color: white;
+}
+form{
+  margin-top: 10%;
+}
+
+#gameScreen {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 8%;
+  color:white;
+}
+
+.player0.col-xs-5 img{
+    margin-left: 150px;
+    width: 300px;
+    height: 300px;
+}
+.player1.col-xs-5 img{
+   margin-left:200px;
+   width: 300px;
+   height: 300px;
+}
+
+#rollButton {
+  margin-top: 50px;
+  width: 90px;
+  height: 90px;
+  background-image: url(../img/dice.png);
+  border-radius: 8px;
+  color: crimson;
+  font-size: 30px;
+  font-weight: bolder;
+  font-family: 'Tangerine', cursive;
+}
+#holdButton{
+  font-size: 17px;
+}
+.dieValue {
+  font-size: 5em;
+}
+#player1Win, #player0Win{
+  text-align: center;
+}
+#player1Win p, #player0Win p{
+  font-size: 1.5em;
+}
+.rules {
+  font-family: Tangerine ;
+  text-align: left;
+  font-size: 108%;
+  color: white;
+  max-width: 700px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
+  padding: 5px;
+  padding-left: 15px;
+  margin-top: 5%;
+}
+.playAgain:hover {
+  cursor: pointer;
+  color: crimson;
+  text-decoration: underline;
+}
+.col-xs-6 h3{
+  font-size: 5em;
+  margin-bottom: 50px;
+}
+@media (max-width:992px){
+  #startScreen h1{
+    font-size: 5em;
+  }
+  #startScreen{
+    top: 80px;
+  }
+  form{
+    margin-top: 2%;
+  }
+  .rules{
+    margin-top: 2%;
+  }
+}
+@media (max-width: 768px){
+  img#grass{
+    display: none;
+  }
+  #startScreen h1{
+    font-size: 5em;
+  }
+  label{
+    color: black;
+  }
+  #startButton:hover{
+  background: rgba(0, 0, 0, 0.6);
+  }
+}
